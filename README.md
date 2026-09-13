@@ -1,246 +1,99 @@
-# 🎓 One-Page Instructional Designer Portfolio
+# Joshua Webb - Personal Website
 
-A modern, professional one-page website template designed specifically for instructional designers, learning experience designers, and educational technology professionals.
+A one-page personal website showcasing my work as an educator, community schools leader, and program designer working to close achievement gaps across the classroom, extended learning, and educational access in North Carolina.
 
-## ✨ Features
+## 📁 Files Included
 
-- 📄 **Single Page Design** - All content on one scrolling page with smooth navigation
-- 🎨 **Professional Color Palette** - Warm, sophisticated colors (#fffcf2, #ccc5b9, #403d39, #252422, #eb5e28)
-- 📚 **ID-Specific Sections** - Portfolio showcase, expertise areas, and learning philosophy
-- 📱 **Fully Responsive** - Perfect on all devices
-- ⚡ **Smooth Scrolling** - Enhanced user experience with smooth section transitions
-- 💼 **Portfolio Ready** - Showcase your courses, modules, and learning experiences
+- `index.html` - The entire website (all sections, styling, and scripts in one file)
+- `README.md` - This file
 
-## 🎨 Design Philosophy
+Everything lives in `index.html`, so there's just one file to edit for the whole site.
 
-This template uses a warm, professional color scheme perfect for education professionals:
-- **Cream (#fffcf2)** - Main background for a soft, approachable feel
-- **Beige (#ccc5b9)** - Secondary backgrounds for subtle depth
-- **Dark Gray (#403d39)** - Body text for excellent readability
-- **Charcoal (#252422)** - Headlines for strong hierarchy
-- **Burnt Orange (#eb5e28)** - Accent color for calls-to-action and emphasis
+## 📬 Contact
 
-### Typography
-- **Headlines**: Le Monde Livre (fallback: Lora) - Elegant serif for authority
-- **Body Text**: Acumin Pro (fallback: Inter) - Clean sans-serif for readability
+- **Email:** [joshwebb@unc.edu](mailto:joshwebb@unc.edu)
+- **LinkedIn:** [Joshua Webb](https://www.linkedin.com/in/YOUR-HANDLE)
+- **Phone:** 252-458-7504
 
-## 📁 File Structure
+## 🎨 Customizing the Website
 
-```
-onepage-website/
-├── index.html          # Main HTML file
-├── style.css           # All styling
-└── README.md          # This file
-```
+### 1. Update Your Information
 
-## 🚀 Quick Start
+In `index.html`, keep these details current:
 
-### 1. Download or Clone
-- Download the ZIP file or clone this repository
-- Extract all files to a folder
+- **Email** - joshwebb@unc.edu (in the Contact section)
+- **LinkedIn** - paste your full profile URL into the LinkedIn button
+- **Phone** - 252-458-7504
+- **Writing links** - The four articles in the Writing section point to `#`. Add the real URLs when you have them.
 
-### 2. Customize Content
-Replace placeholder content in `index.html`:
-- **Your Name** - Throughout the site
-- **Hero Section** - Update title and subtitle
-- **About Section** - Add your bio and stats
-- **Expertise Cards** - Customize your areas of expertise
-- **Skills/Tools** - List your actual tools
-- **Portfolio Projects** - Replace with your actual work
-- **Contact Information** - Add your email, LinkedIn, etc.
+### 2. Customize Colors
 
-### 3. Optional: Add Your Fonts
-If you have Le Monde Livre and Acumin Pro licenses:
-1. Add font files to a `/fonts` folder
-2. Update the `@font-face` rules in `style.css`
-3. The template uses Lora and Inter as fallbacks (loaded from Google Fonts)
+Near the top of `index.html`, inside the `<style>` block, you'll find color variables you can change:
 
-### 4. Customize Colors (Optional)
-Edit the CSS variables in `style.css` (lines 8-12):
 ```css
-:root {
-    --cream: #fffcf2;
-    --beige: #ccc5b9;
-    --dark-gray: #403d39;
-    --charcoal: #252422;
-    --accent: #eb5e28;
-}
+--cream: #fffcf2;        /* Main background */
+--ink: #403d39;          /* Body text */
+--charcoal: #252422;     /* Headlines */
+--ember: #eb5e28;        /* Accent color for buttons and highlights */
 ```
 
-## 🌐 Deploying to GitHub Pages
+Just change these hex codes to adjust the whole site's look.
 
-### Option 1: Personal Site (username.github.io)
-1. Create a repository named `your-username.github.io`
-2. Upload all files
-3. Your site will be at `https://your-username.github.io`
+## 🚀 Deploying to GitHub Pages
 
-### Option 2: Project Site
-1. Create any repository (e.g., `portfolio`)
-2. Upload files
-3. Go to **Settings** → **Pages**
-4. Select **main** branch
-5. Your site will be at `https://your-username.github.io/portfolio`
+### Step 1: Create a New Repository
 
-## 📧 Contact Form Setup
+1. Click the "+" icon in the top right corner
+2. Select "New repository"
+3. Name it: `your-username.github.io` (use your actual GitHub username)
+4. Make it **Public**
+5. Click "Create repository"
 
-The contact form needs a backend service to function:
+### Step 2: Upload Your File
 
-### Recommended: Formspree
-1. Sign up at [formspree.io](https://formspree.io) (free tier available)
-2. Create a new form
-3. Get your form endpoint
-4. In `index.html`, update the form tag:
-   ```html
-   <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-   ```
-5. Remove the JavaScript form handler from `script.js`
+1. On your new repository page, click "uploading an existing file"
+2. Add your `index.html` file (and this `README.md` if you'd like)
+3. Scroll down and click "Commit changes"
 
-### Alternative: Netlify Forms
-1. Deploy to Netlify instead of GitHub Pages
-2. Add `netlify` attribute to form tag
-3. Forms automatically work
+### Step 3: Enable GitHub Pages
 
-## 🎯 Customization Ideas
+1. Go to your repository **Settings**
+2. Scroll to the **Pages** section
+3. Under "Source," select "Deploy from a branch"
+4. Choose the **main** branch and **/ (root)** folder
+5. Click "Save"
 
-### Adding Project Images
-1. Create an `images` folder
-2. Upload project screenshots
-3. Replace the placeholder divs:
-   ```html
-   <div class="portfolio-image">
-       <img src="images/project1.jpg" alt="Project Name">
-   </div>
-   ```
+### Step 4: View Your Website!
 
-### Adding Your Photo
-Add a profile photo to the About section:
-```html
-<div class="about-content">
-    <img src="images/profile.jpg" alt="Your Name" class="profile-photo">
-    <div class="about-text">
-        <!-- existing content -->
-    </div>
-</div>
-```
+Your site will be live at: `https://your-username.github.io`
 
-Then add CSS:
-```css
-.profile-photo {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid var(--accent);
-}
-```
+It may take a few minutes to deploy the first time.
 
-### Adding More Expertise Cards
-Copy an existing expertise card in `index.html`:
-```html
-<div class="expertise-card">
-    <div class="expertise-icon">🎯</div>
-    <h3>Your Expertise</h3>
-    <p>Description of your expertise area</p>
-</div>
-```
+## 📝 Notes
 
-### Changing Section Order
-Sections are designed to be modular. Reorder them in `index.html` as needed, just make sure to update the navigation links.
+### Contact
 
-## 🛠️ Technologies Used
+The Contact section uses simple Email and LinkedIn buttons, so there's no form to set up. Just make sure your links point to the right places.
 
-- **HTML5** - Semantic markup
-- **CSS3** - Flexbox, Grid, CSS Variables, Animations
-- **JavaScript** - Smooth scrolling, active navigation
-- **Google Fonts** - Lora & Inter (fallback fonts)
+### Adding a Photo
 
-## 📱 Browser Support
+To add a profile photo:
 
-✅ Chrome/Edge (latest)  
-✅ Firefox (latest)  
-✅ Safari (latest)  
-✅ Mobile browsers  
+1. Create an `images` folder in your repository
+2. Upload your photo
+3. Reference it in `index.html` like: `<img src="images/your-photo.jpg" alt="Joshua Webb">`
 
-## 🎓 Perfect For
+## 🎯 Next Steps
 
-This template is ideal for:
-- Instructional Designers
-- Learning Experience Designers (LXD)
-- Educational Technologists
-- Curriculum Developers
-- Corporate Trainers
-- E-Learning Developers
-- Academic Faculty
-- Instructional Coaches
+- Add a professional photo to the About section
+- Link the Writing entries to your real articles
+- Adjust colors if you want a different feel
 
-## 💡 Content Tips for Instructional Designers
+## 🆘 Need Help?
 
-### Portfolio Projects
-For each project, include:
-- Project type (e-learning, ILT, blended, etc.)
-- Tools used
-- Learning objectives addressed
-- Measurable outcomes (completion rates, satisfaction scores, etc.)
-- Your specific role
-- Target audience
-
-### Expertise Section
-Highlight skills relevant to ID:
-- ADDIE/SAM methodology
-- Learning theories applied
-- Assessment design
-- LMS expertise
-- Authoring tool proficiency
-- Visual design capabilities
-
-### About Section
-Consider mentioning:
-- Your design philosophy
-- Years of experience
-- Industries you've worked in
-- Certifications (ATD, eLearning Guild, etc.)
-- Educational background
-
-## 🤝 Contributing
-
-Feel free to fork this template and customize it! If you create improvements, consider:
-1. Forking the repository
-2. Making your enhancements
-3. Submitting a pull request
-
-## 📄 License
-
-This template is free to use for personal and commercial projects. Attribution is appreciated but not required.
-
-## 🌟 Show Your Support
-
-If you use this template:
-- ⭐ Star this repository
-- 📢 Share it with other instructional designers
-- 🐦 Tag me on social media with your site!
-
-## 📚 Resources
-
-### Instructional Design
-- [eLearning Guild](https://www.elearningguild.com/)
-- [ATD (Association for Talent Development)](https://www.td.org/)
-- [Articulate Community](https://community.articulate.com/)
-
-### Design Inspiration
-- [Dribbble - Portfolio Designs](https://dribbble.com/tags/portfolio)
-- [Behance - Learning Design](https://www.behance.net/search/projects?search=learning+design)
-
-### Web Development
-- [MDN Web Docs](https://developer.mozilla.org/)
-- [CSS-Tricks](https://css-tricks.com/)
-- [W3Schools](https://www.w3schools.com/)
-
-## 💬 Questions?
-
-Open an issue on GitHub or reach out to the community!
+- [GitHub Pages Documentation](https://docs.github.com/en/pages)
+- [Markdown Guide](https://www.markdownguide.org)
 
 ---
 
-**Built with ❤️ for instructional designers**
-
-*Design learning experiences that matter* ✨
+Built to reach students in every place their education happens. 🎓
